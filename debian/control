@@ -8,8 +8,8 @@ Homepage: http://moonsdad.webs.com/
 
 Package: hilde
 Architecture: any
-Pre-Depends: 
-Depends: xinit, lxpanel
+Pre-Depends: xdm
+Depends: xinit, lwm | tinywm, lxpanel
 Recommends: termit, medit, speedcrunch
 Suggests: firefox, meld, recordmydesktop, roll
 Description: HilDE is a Lightweight Desktop Environment

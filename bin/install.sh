@@ -8,7 +8,7 @@ apt-get purge byobu yelp && apt-get autoremove
 apt-get update && apt-get upgrade && apt-get dist-upgrade
 
 # GUI Basis
-apt-get install xinit lxpanel
+apt-get install xinit xdm lxpanel
 
 # Desktop Environment Default Apps
 apt-get install termit medit speedcrunch

@@ -2,8 +2,8 @@
 HilDE is a Lightweight Desktop Environment:
 
 	Package Manager: deb
-	Display Manager: (Haven't decided yet)
-	Window Manager:  (Haven't decided yet)
+	Display Manager: XDM
+	Window Manager: My own fork of either LWM or TinyWM (Haven't decided yet)
 	Taskbar: lxpanel
 	Terminal Emulator: My fork of Termit
 	Calculator: Speedcrunch

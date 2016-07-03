@@ -1,5 +1,7 @@
-Select components.
+Select LWM or TinyWM.
 Enable functionality:
+  - (TinyWM)? popup eg firefox settings.
+  - (LWM)? Window Resize vs GTK Bug eg medit and termit
   - "Print Screen" Screenshot via imagemagick
   - Alt-F4 Close Windows or Log Out
   - Hold CTRL to lock mouse axis
