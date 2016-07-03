@@ -6,7 +6,7 @@
 NONE=true       # <--Exec `true` for unused Parts
 
 ##CONFIGURATION##
-TASKBAR=$NONE   #
+TASKBAR=lxpanel #
 FILEMGR=$NONE   #
 WALLPAP=$NONE   #
 EXTRA=$NONE     #

@@ -2,9 +2,9 @@
 HilDE is a Lightweight Desktop Environment:
 
 	Package Manager: deb
-	Display Manager: 
-	Window Manager: 
-	Taskbar: 
+	Display Manager: (Haven't decided yet)
+	Window Manager:  (Haven't decided yet)
+	Taskbar: lxpanel
 	Terminal Emulator: My fork of Termit
 	Calculator: Speedcrunch
 	Text Editor: medit

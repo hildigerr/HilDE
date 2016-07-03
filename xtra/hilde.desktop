@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=HilDE
 Comment=HilDE is a Lightweight Desktop Envirionment
-Exec=
-TryExec=
+Exec=/usr/local/bin/hilde-start
+TryExec=/usr/local/bin/hilde-start
 Type=XSession

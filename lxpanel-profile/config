@@ -1,0 +1,4 @@
+[Command]
+FileManager=firefox %s
+Terminal=termit
+Logout=hilde-logout
