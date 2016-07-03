@@ -1,0 +1,15 @@
+Source: hilde
+Maintainer: HildigerR Vergaray <moonsdad@gmail.com>
+Section: meta
+Priority: optional
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.9.5
+Homepage: http://moonsdad.webs.com/
+
+Package: hilde
+Architecture: any
+Pre-Depends: 
+Depends:
+Recommends:
+Suggests:
+Description: HilDE is a Lightweight Desktop Environment

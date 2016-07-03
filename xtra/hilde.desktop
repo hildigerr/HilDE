@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=HilDE
+Comment=HilDE is a Lightweight Desktop Envirionment
+Exec=
+TryExec=
+Type=XSession
