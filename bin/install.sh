@@ -4,7 +4,10 @@ exit # Don't Run This Yet
 
 # Prepare System
 add-apt-repository ppa:moonsdad/ppa
-apt-get purge byobu yelp && apt-get autoremove
+apt-get purge \
+  byobu \
+  yelp #https://bugs.launchpad.net/ubuntu/+source/yelp/+bug/1404728
+apt-get autoremove
 apt-get update && apt-get upgrade && apt-get dist-upgrade
 
 # GUI Basis
