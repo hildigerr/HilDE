@@ -9,7 +9,7 @@ Homepage: http://moonsdad.webs.com/
 Package: hilde
 Architecture: any
 Pre-Depends: 
-Depends:
-Recommends:
-Suggests:
+Depends: xinit
+Recommends: termit, medit, speedcrunch
+Suggests: firefox, meld, recordmydesktop, roll
 Description: HilDE is a Lightweight Desktop Environment

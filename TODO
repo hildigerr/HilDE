@@ -1,0 +1,8 @@
+Select components.
+Enable functionality:
+  - "Print Screen" Screenshot via imagemagick
+  - Alt-F4 Close Windows or Log Out
+  - Hold CTRL to lock mouse axis
+  - Desktop Paging
+  - Lock Screen (which component is responsible for this?)
+Create deb package.
