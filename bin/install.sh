@@ -1,6 +1,6 @@
 #!/bin/sh
 
-exit # Don't Run This Yet
+echo "Don't Run This -- Just for Reference" && exit
 
 # Prepare System
 add-apt-repository ppa:moonsdad/ppa
@@ -10,28 +10,39 @@ apt-get purge \
 apt-get autoremove
 apt-get update && apt-get upgrade && apt-get dist-upgrade
 
+
 # GUI Basis
-apt-get install xinit xdm lxpanel
+apt-get install xinit xdm
+apt-get install lxpanel lxappearance
+ln -s /usr/share/lxpanel/profile/hilde /etc/skel/.config/lxpanel/default
+
+# Desktop Environment Default Theme
+apt-get install gnome-icon-theme-full gnome-icon-theme-suede
+
 
 # Desktop Environment Default Apps
-apt-get install termit medit speedcrunch
+# Terminal Emulator
+apt-get install termit
+ln /usr/share/icons/Suede/scalable/apps/gnome-terminal.svg /usr/share/pixmaps/utilities-terminal.svg
+sed -i -e "s/^defaults.topMenu = false/defaults.topMenu = true/" /etc/xdg/termit/rc.lua
+# Text and Number Processing
+apt-get install medit speedcrunch
+# Networking
 apt-get install --install-suggests firefox
-
-# Desktop Environment Extra Apps (Games+Media)
+# Games
 apt-get install roll
+# Image Processing
 apt-get install recordmydesktop imagemagick gimp
-apt-get install sox  libsox-fmt-all
+# Audio Processing
+apt-get install sox libsox-fmt-all
 
 # Development
-apt-get install meld bugd
+apt-get install meld bugd git
 apt-get install --install-suggests build-essential
 apt-get install --install-suggests devhelp
 
-# Enable Desktop Environment for User
-pushd . && cd .. #Expecting to called from within HilDE/bin/
-  make install && cp -r /usr/share/lxpanel/profile/hilde $HOME/.config/default
-  cp `which hilde-start` $HOME/.Xsession
-popd
+
+# Enable Desktop Environment for Users
 
 # Basic Default Security Settings
 # Logging and UMASK

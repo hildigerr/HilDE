@@ -15,4 +15,4 @@ HilDE is a Lightweight Desktop Environment:
 		Audio: play (sox)
 		Video: None (Web Browser)
 
-	Additional: recordmydesktop
+	Additional: recordmydesktop, roll, gimp
