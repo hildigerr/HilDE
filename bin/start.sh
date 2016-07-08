@@ -7,10 +7,10 @@ NONE=true       # <--Exec `true` for unused Parts
 
 ##CONFIGURATION##
 TASKBAR=lxpanel #
-FILEMGR=$NONE   #
+FILEMGR=$NONE   # Eg: pcmanfm, thunar, doublecmd-gtk
 WALLPAP=$NONE   #
 EXTRA=$NONE     #
-WINMGR=$NONE    #
+WINMGR=lwm      # Eg: openbox, tinywm
 #################
 
 $TASKBAR &

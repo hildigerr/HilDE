@@ -17,13 +17,11 @@ apt-get install lxpanel lxappearance
 ln -s /usr/share/lxpanel/profile/hilde /etc/skel/.config/lxpanel/default
 
 # Desktop Environment Default Theme
-apt-get install gnome-icon-theme-full gnome-icon-theme-suede
-
+cp -R img/icons/ /usr/share/icons/HilDE/
 
 # Desktop Environment Default Apps
 # Terminal Emulator
 apt-get install termit
-ln /usr/share/icons/Suede/scalable/apps/gnome-terminal.svg /usr/share/pixmaps/utilities-terminal.svg
 sed -i -e "s/^defaults.topMenu = false/defaults.topMenu = true/" /etc/xdg/termit/rc.lua
 # Text and Number Processing
 apt-get install medit speedcrunch
@@ -37,7 +35,7 @@ apt-get install recordmydesktop imagemagick gimp
 apt-get install sox libsox-fmt-all
 
 # Development
-apt-get install meld bugd git
+apt-get install meld bugd git ascii
 apt-get install --install-suggests build-essential
 apt-get install --install-suggests devhelp
 

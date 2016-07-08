@@ -1,10 +1,11 @@
-Select LWM or TinyWM.
 Enable functionality:
-  - (TinyWM)? popup eg firefox settings.
-  - (LWM)? Window Resize vs GTK Bug eg medit and termit
+  - Window Resize vs GTK Bug (eg medit and termit)
+  - Prefer both x,y window resize
+  - Move close window box right
   - "Print Screen" Screenshot via imagemagick
   - Alt-F4 Close Windows or Log Out
   - Hold CTRL to lock mouse axis
   - Desktop Paging (Maybe fork lxpanel)
   - Lock Screen (which component is responsible for this?)
+  - Eye Track via Webcam for Window Focus
 Create deb package.
