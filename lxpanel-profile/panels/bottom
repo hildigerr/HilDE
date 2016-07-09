@@ -39,7 +39,7 @@ Plugin {
         image=window-manager
         Button1=iconify
         Button2=shade
-        Toggle=0
+        Toggle=1
     }
 }
 

@@ -28,7 +28,7 @@ Global {
 Plugin {
     type = menu
     Config {
-        image=/usr/share/pixmaps/start-menu.xpm
+        image=/usr/share/pixmaps/start-menu.png
         system {
         }
         separator {

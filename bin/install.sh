@@ -14,10 +14,11 @@ apt-get update && apt-get upgrade && apt-get dist-upgrade
 # GUI Basis
 apt-get install xinit xdm
 apt-get install lxpanel lxappearance
-ln -s /usr/share/lxpanel/profile/hilde /etc/skel/.config/lxpanel/default
 
 # Desktop Environment Default Theme
+ln -s /usr/share/lxpanel/profile/hilde /etc/skel/.config/lxpanel/default
 cp -R img/icons/ /usr/share/icons/HilDE/
+ln /usr/share/icons/HilDE/places/24/start-menu.png /usr/share/pixmaps/start-menu.png
 
 # Desktop Environment Default Apps
 # Terminal Emulator
