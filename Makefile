@@ -7,7 +7,7 @@ PIXDIR=$DESTDIR/usr/share/pixmaps
 WALLSIZE=1600x900
 
 WALLPAPER=img/bg/Hippo-in-a-TuTu-${WALLSIZE}.png
-BIN=bin/start.sh bin/stop.sh
+BIN=bin/start.sh bin/stop.sh bin/aliases.sh
 IMG=img/start-menu.xpm img/hilde-on-ubuntu.xpm $WALLPAPER
 FILES=$BIN $IMG xtra/Xresources
 
@@ -25,6 +25,7 @@ install: HilDE $FILES backup
 	cp img/hilde-on-ubuntu.xpm   $DESTDIR/usr/share/X11/xdm/pixmaps/
 	cp img/start-menu.xpm        $PIXDIR/
 	cp $WALLPAPER                $PIXDIR/ 
+	cp bin/aliases.sh            $SKELDIR/
 
 ### Unnecessary:
 

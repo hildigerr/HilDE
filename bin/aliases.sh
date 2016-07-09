@@ -1,0 +1,3 @@
+alias vid='display vid:*'
+
+
