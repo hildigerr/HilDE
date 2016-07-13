@@ -37,10 +37,6 @@ Size=32
 Context=Categories
 Type=Fixed
 
-[devices/16]
-Context=Devices
-Size=16
-Type=Fixed
 
 [places/scalable]
 Size=24
