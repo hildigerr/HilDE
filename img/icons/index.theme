@@ -2,19 +2,22 @@
 Name=HilDE
 Comment=Default HilDE Theme
 #Inherits=
-#Example=
-Directories=apps/16,apps/32,apps/scalable,categories/16,categories/32,places/scalable
+#Example=start-menu
+Directories=actions/16,apps/16,apps/32,apps/scalable,categories/16,categories/32,places/scalable
+
+[actions/16]
+Size=16
+Context=Actions
+Type=Fixed
 
 [apps/16]
 Size=16
 Context=Applications
-Size=16
 Type=Fixed
 
 [apps/32]
 Size=32
 Context=Applications
-Size=32
 Type=Fixed
 
 [apps/scalable]
@@ -25,16 +28,22 @@ MinSize=8
 MaxSize=2048
 
 [categories/16]
-Context=Categories
 Size=16
+Context=Categories
 Type=Fixed
 
 [categories/32]
-Context=Categories
 Size=32
+Context=Categories
+Type=Fixed
+
+[devices/16]
+Context=Devices
+Size=16
 Type=Fixed
 
 [places/scalable]
+Size=24
 Context=Places
 Type=Scalable
 MinSize=8
