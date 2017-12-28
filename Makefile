@@ -8,7 +8,7 @@ WALLSIZE=1600x900
 
 WALLPAPER=img/bg/Hippo-in-a-TuTu-${WALLSIZE}.png
 START_MENU_IMG=img/icons/places/24/start-menu.png
-BIN=bin/start.sh bin/stop.sh bin/aliases.sh
+BIN=bin/start.sh bin/stop.sh
 IMG=${START_MENU_IMG} img/hilde-on-ubuntu.xpm ${WALLPAPER}
 FILES=${BIN} ${IMG} xtra/Xresources
 
@@ -26,7 +26,6 @@ HilDE:
 	cp img/hilde-on-ubuntu.xpm   ${DESTDIR}/usr/share/X11/xdm/pixmaps/
 	cp ${START_MENU_IMG}         ${PIXDIR}/
 	cp ${WALLPAPER}              ${PIXDIR}/
-	cp bin/aliases.sh            ${SKELDIR}/
 
 ### Unnecessary:
 
