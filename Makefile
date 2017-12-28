@@ -18,6 +18,7 @@ HilDE:
 
 .install: HilDE skel xdm ${WALLPAPER} ${START_MENU_IMG} bin/stop.sh
 	cp bin/stop.sh               ${BINDIR}/hilde-logout
+	chmod a+x                    ${BINDIR}/hilde-logout
 	mkdir -p                     ${LXPDIR}
 	cp -r lxpanel-profile        ${LXPDIR}/hilde
 	cp ${WALLPAPER}              ${PIXDIR}/
