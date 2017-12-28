@@ -11,5 +11,5 @@ Architecture: any
 Pre-Depends: xdm
 Depends: xinit, lwm | tinywm, lxpanel
 Recommends: termit, medit, speedcrunch
-Suggests: firefox, meld, recordmydesktop, roll
+Suggests: firefox, meld, roll
 Description: HilDE is a Lightweight Desktop Environment

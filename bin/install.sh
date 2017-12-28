@@ -27,11 +27,11 @@ sed -i -e "s/^defaults.topMenu = false/defaults.topMenu = true/" /etc/xdg/termit
 # Text and Number Processing
 apt-get install medit speedcrunch
 # Networking
-apt-get install --install-suggests firefox
+apt-get install firefox
 # Games
 apt-get install roll
 # Image Processing
-apt-get install recordmydesktop imagemagick gimp
+apt-get install imagemagick gimp
 # Audio Processing
 apt-get install sox libsox-fmt-all
 
