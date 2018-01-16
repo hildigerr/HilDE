@@ -5,13 +5,13 @@
 
 NONE=true       # <--Exec `true` for unused Parts
 
-##CONFIGURATION##
-TASKBAR=lxpanel #
-FILEMGR=$NONE   # Eg: pcmanfm, thunar, doublecmd-gtk
+##CONFIGURATION####
+TASKBAR=lxpanel   #
+FILEMGR=$NONE     # Eg: pcmanfm, thunar, doublecmd-gtk
 WALLPAP="display -window root /usr/share/pixmaps/default-background.png"
-EXTRA=$NONE     #
-WINMGR=lwm      # Eg: openbox, tinywm
-#################
+EXTRA=fbautostart #
+WINMGR=lwm        # Eg: openbox, tinywm
+###################
 
 $TASKBAR &
 $FILEMGR &
