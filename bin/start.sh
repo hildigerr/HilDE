@@ -3,18 +3,15 @@
 # HilDE is a Light Desktop Environment
 #
 
-NONE=true       # <--Exec `true` for unused Parts
 
-##CONFIGURATION####
-TASKBAR=lxpanel   #
-FILEMGR=$NONE     # Eg: pcmanfm, thunar, doublecmd-gtk
+####CONFIGURATION####
+TASKBAR=lxpanel
 WALLPAP="display -window root /usr/share/pixmaps/default-background.png"
-EXTRA=fbautostart #
-WINMGR=lwm        # Eg: openbox, tinywm
+EXTRA=fbautostart
+WINMGR=lwm
 ###################
 
 $TASKBAR &
-$FILEMGR &
 $WALLPAP &
 $EXTRA   &
 $WINMGR
