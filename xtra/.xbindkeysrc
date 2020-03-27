@@ -7,3 +7,7 @@
 "xtrlock"
     control+shift + l
 
+# Create Screenhot
+"import -window root screenshot_`date +%Y-%m-%dt%H:%M:%S`.png"
+    m:0x10 + c:107
+    Mod2 + Print
