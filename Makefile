@@ -33,6 +33,7 @@ xdm: backup xtra/Xresources img/hilde-on-ubuntu.xpm
 skel: bin/start.sh xxxdirxxx
 	cp bin/start.sh              ${SKELDIR}/.Xsession
 	cp -r lxpanel-profile        ${SKELDIR}/.config/lxpanel/default
+	cp xtra/.xbindkeysrc         ${SKELDIR}/
 
 ### Unnecessary:
 

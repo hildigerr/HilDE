@@ -1,0 +1,5 @@
+
+# Kill active window with Alt-F4
+"wmctrl -c :ACTIVE:"
+  Alt+Mod2 + F4
+

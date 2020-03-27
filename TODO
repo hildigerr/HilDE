@@ -3,7 +3,7 @@ Enable functionality:
   - Prefer both x,y window resize
   - Move close window box right
   - "Print Screen" Screenshot via imagemagick
-  - Alt-F4 Close Windows or Log Out
+  - Alt-F4 Log Out if no active window
   - Hold CTRL to lock mouse axis
   - Desktop Paging (Maybe fork lxpanel)
   - Lock Screen (which component is responsible for this?)
