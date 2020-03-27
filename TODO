@@ -6,7 +6,6 @@ Enable functionality:
   - Alt-F4 Log Out if no active window
   - Hold CTRL to lock mouse axis
   - Desktop Paging (Maybe fork lxpanel)
-  - Lock Screen (which component is responsible for this?)
   - Eye Track via Webcam for Window Focus (http://www.inference.phy.cam.ac.uk/opengazer/)
 Create deb package.
 Declare icon origins and license.

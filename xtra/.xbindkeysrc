@@ -3,3 +3,7 @@
 "wmctrl -c :ACTIVE:"
   Alt+Mod2 + F4
 
+# Lock Screen
+"xtrlock"
+    control+shift + l
+
