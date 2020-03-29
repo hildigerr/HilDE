@@ -15,8 +15,7 @@ HilDE:
 	cp -R img/icons/             ${DESTDIR}/usr/share/icons/HilDE/
 	ln ${DESTDIR}/usr/share/icons/HilDE/places/24/start-menu.png ${PIXDIR}/
 
-xdm: backup xtra/Xresources ${LOGIN_IMG}
-	cp xtra/Xresources           ${XRESOURCES}
+xdm: backup ${LOGIN_IMG}
 	cp ${LOGIN_IMG}              ${DESTDIR}/usr/share/X11/xdm/pixmaps/
 
 
