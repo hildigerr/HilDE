@@ -19,7 +19,7 @@ fi
 
 # GUI Basis
 install xinit xdm
-install lxpanel lxappearance
+install lxpanel
 
 # Desktop Environment Default Theme
 ln -s /usr/share/lxpanel/profile/hilde /etc/skel/.config/lxpanel/default
@@ -28,10 +28,9 @@ ln /usr/share/icons/HilDE/places/24/start-menu.png /usr/share/pixmaps/start-menu
 
 # Desktop Environment Default Apps
 # Terminal Emulator
-install termit
-sed -i -e "s/^defaults.topMenu = false/defaults.topMenu = true/" /etc/xdg/termit/rc.lua
+install hermit
 # Text and Number Processing
-install medit speedcrunch
+install ed medit speedcrunch
 # Networking
 install firefox
 # Games
@@ -40,7 +39,8 @@ install roll
 install imagemagick gimp
 # Audio Processing
 install sox libsox-fmt-all
-
+# Misc
+install pass xpad
 # Development
 install meld bugd git ascii
 install --install-suggests build-essential
