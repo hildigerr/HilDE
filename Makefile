@@ -1,4 +1,3 @@
-BINDIR=${DESTDIR}/usr/local/bin
 PIXDIR=${DESTDIR}/usr/share/pixmaps
 XRESOURCES=${DESTDIR}/etc/X11/xdm/Xresources
 
@@ -11,9 +10,8 @@ HilDE:
 
 
 
-.install: HilDE xdm ${START_MENU_IMG} bin/stop.sh
-	cp bin/stop.sh               ${BINDIR}/hilde-logout
-	chmod a+x                    ${BINDIR}/hilde-logout
+.install: HilDE xdm ${START_MENU_IMG}
+	chmod a+x                    files/usr/bin/hilde-logout
 	cp -R img/icons/             ${DESTDIR}/usr/share/icons/HilDE/
 	ln ${DESTDIR}/usr/share/icons/HilDE/places/24/start-menu.png ${PIXDIR}/
 
