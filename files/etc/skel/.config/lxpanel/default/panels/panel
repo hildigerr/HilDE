@@ -28,7 +28,7 @@ Global {
 Plugin {
     type = menu
     Config {
-        image=/usr/share/pixmaps/start-menu.png
+        image=/usr/share/pixmaps/hilde-start-menu.png
         system {
         }
         separator {
