@@ -35,6 +35,3 @@ skel: bin/start.sh
 backup:
 	cp ${XRESOURCES}             ${XRESOURCES}.old-`date +%F`
 
-xsession: xtra/hilde.desktop
-	cp xtra/hilde.desktop        ${DESTDIR}/usr/share/xsessions/
-
