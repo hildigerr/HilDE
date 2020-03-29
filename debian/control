@@ -1,15 +1,15 @@
 Source: hilde
-Maintainer: HildigerR Vergaray <moonsdad@gmail.com>
+Maintainer: HildigerR Vergaray <Maintainer@YmirSystesms.com>
 Section: meta
 Priority: optional
 Build-Depends: debhelper (>= 7)
 Standards-Version: 3.9.5
-Homepage: http://moonsdad.webs.com/
+Homepage: https://github.com/hildigerr/HilDE
 
 Package: hilde
 Architecture: any
 Pre-Depends: xdm
-Depends: xinit, lwm | tinywm, lxpanel, fbautostart, xbindkeys, wmctrl, xtrlock
+Depends: xinit, lwm | tinywm, lxpanel, fbautostart, xbindkeys, wmctrl, xtrlock, xmessage
 Recommends: hermit, medit, speedcrunch, imagemagick
 Suggests: firefox, meld, roll, pass, xpad
 Description: HilDE is a Lightweight Desktop Environment
