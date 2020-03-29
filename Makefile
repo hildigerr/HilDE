@@ -1,5 +1,4 @@
 BINDIR=${DESTDIR}/usr/local/bin
-SKELDIR=${DESTDIR}/etc/skel
 PIXDIR=${DESTDIR}/usr/share/pixmaps
 XRESOURCES=${DESTDIR}/etc/X11/xdm/Xresources
 
@@ -15,7 +14,7 @@ HilDE:
 
 
 
-.install: HilDE skel xdm ${WALLPAPER} ${START_MENU_IMG} bin/stop.sh
+.install: HilDE xdm ${WALLPAPER} ${START_MENU_IMG} bin/stop.sh
 	cp bin/stop.sh               ${BINDIR}/hilde-logout
 	chmod a+x                    ${BINDIR}/hilde-logout
 	cp ${WALLPAPER}              ${PIXDIR}/
@@ -27,8 +26,8 @@ xdm: backup xtra/Xresources ${LOGIN_IMG}
 	cp ${LOGIN_IMG}              ${DESTDIR}/usr/share/X11/xdm/pixmaps/
 
 
-skel: bin/start.sh
-	cp bin/start.sh              ${SKELDIR}/.Xsession
+debsetup:
+	mv files/etc/skel/.xinitrc   files/etc/skel/.Xsession
 
 ### Unnecessary:
 
