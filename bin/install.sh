@@ -7,6 +7,7 @@ install() { echo "install: " $@; }
 # Prepare System
 if which apt-get 2>/dev/null
   then
+    system=deb
     add-apt-repository ppa:moonsdad/ppa
     apt-get purge \
       byobu \
@@ -15,10 +16,23 @@ if which apt-get 2>/dev/null
     apt-get update && apt-get upgrade && apt-get dist-upgrade
     install() { apt-get install $@; }
 fi
+if which pacman 2>/dev/null
+  then
+    system=arch
+    install() { pacman -S $@; }
+fi
 
+# System Essentials
+install ed git
 
 # GUI Basis
-install xinit xdm
+if [ $system = arch ]
+  then
+    install xorg-server xorg-xdm xorg-xmessage
+    systemctl enable xdm.service
+  else
+    install xinit xdm xmessage
+fi
 install lxpanel
 
 # Desktop Environment Default Theme
@@ -30,21 +44,34 @@ ln /usr/share/icons/HilDE/places/24/start-menu.png /usr/share/pixmaps/start-menu
 # Terminal Emulator
 install hermit
 # Text and Number Processing
-install ed medit speedcrunch
+if [ $system = deb ]
+  then
+    install medit
+  else
+    echo install: https://aur.archlinux.org/medit.git #TODO
+fi
+install speedcrunch
 # Networking
 install firefox
 # Games
-install roll
+if [ $system = deb ]
+  then
+    install roll
+fi
 # Image Processing
 install imagemagick gimp
 # Audio Processing
-install sox libsox-fmt-all
+install sox libsox-fmt-all #TODO: fmts on arch
 # Misc
 install pass xpad
 # Development
-install meld bugd git ascii
-install --install-suggests build-essential
-install --install-suggests devhelp
+install meld ascii
+if [ $system = deb ]
+  then
+    install bugd
+    install --install-suggests build-essential
+    install --install-suggests devhelp
+fi
 
 
 # Enable Desktop Environment for Users
@@ -53,10 +80,12 @@ install --install-suggests devhelp
 # Logging and UMASK
 sed -i.old-`date +%F` -e "s/^#SULOG_FILE/SULOG_FILE/" /etc/login.defs
 sed -i -e "s/^UMASK.*$/UMASK\t\t077/" /etc/login.defs
-sed -i -e "s/#umask 022/#umask 077/" /etc/skel/.profile
+sed -i -e "s/#umask 022/#umask 077/" /etc/skel/.profile #TODO: arch
 
 # Use users Group
 sed -i -e "s/USERGROUPS_ENAB yes/USERGROUPS_ENAB no/" /etc/login.defs
+if [ $system = deb ]
+  then
 sed -i -e "s/^# GROUP=100/GROUP=100/" /etc/default/useradd
 usermod -g users $USER && gpasswd -d $USER $USER && delgroup $USER
 chmod -R g-w $HOME
@@ -66,4 +95,9 @@ echo |                       (EDITOR="tee -a" visudo)
 echo "#Users can shutdown" | (EDITOR="tee -a" visudo)
 echo "%users ALL =NOPASSWD: /sbin/poweroff,/sbin/shutdown,/sbin/reboot" | \
                              (EDITOR="tee -a" visudo)
+
+  else
+    # wheel group for sudoers
+    echo "%wheel ALL=(ALL) ALL" |(EDITOR="tee -a" visudo)
+fi
 

@@ -12,9 +12,9 @@ case $? in
     $Cancel)
         echo "Exit Canceled by $USER [`date`]";;
     $Reboot)
-        reboot;;
+        sudo reboot;;
     $Shutdown)
-        shutdown -h now;;
+        sudo shutdown -h now;;
     $Logout)
         killall -u $USER;;
 esac
