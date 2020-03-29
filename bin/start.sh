@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# HilDE is a Light Desktop Environment
+# HilDE is a Lightweight Desktop Environment
 #
 
 

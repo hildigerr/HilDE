@@ -9,12 +9,12 @@ xmessage "Exit Methods:" -center -title "Exit Methods" -default "Cancel" \
     -buttons "Cancel":$Cancel,"Reboot":$Reboot,"Shutdown":$Shutdown,"Logout":$Logout
 
 case $? in
-    1) #Cancel
+    $Cancel)
         echo "Exit Canceled by $USER [`date`]";;
-    2) #
+    $Reboot)
         sudo reboot;;
-    3) #
+    $Shutdown)
         sudo shutdown -h now;;
-    4) #Logout
+    $Logout)
         killall -u $USER;;
 esac
