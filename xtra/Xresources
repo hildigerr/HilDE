@@ -58,9 +58,9 @@ xlogin*hiColor: black
 #endif
 
 #if PLANES >= 8
-xlogin*logoFileName: /usr/share/X11/xdm/pixmaps/hilde-on-ubuntu.xpm
+xlogin*logoFileName: /usr/share/X11/xdm/pixmaps/hilde.xpm
 #else
-xlogin*logoFileName: /usr/share/X11/xdm/pixmaps/hilde-on-ubuntu.xpm
+xlogin*logoFileName: /usr/share/X11/xdm/pixmaps/xorg-bw.xpm
 #endif
 xlogin*useShape: true
 xlogin*logoPadding: 10

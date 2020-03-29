@@ -8,7 +8,7 @@ WALLSIZE=1600x900
 
 WALLPAPER=img/bg/Hippo-in-a-TuTu-${WALLSIZE}.png
 START_MENU_IMG=img/icons/places/24/start-menu.png
-
+LOGIN_IMG=img/hilde.xpm
 
 
 HilDE:
@@ -25,9 +25,9 @@ HilDE:
 	cp -R img/icons/             ${DESTDIR}/usr/share/icons/HilDE/
 	ln ${DESTDIR}/usr/share/icons/HilDE/places/24/start-menu.png ${PIXDIR}/
 
-xdm: backup xtra/Xresources img/hilde-on-ubuntu.xpm
+xdm: backup xtra/Xresources ${LOGIN_IMG}
 	cp xtra/Xresources           ${XRESOURCES}
-	cp img/hilde-on-ubuntu.xpm   ${DESTDIR}/usr/share/X11/xdm/pixmaps/
+	cp ${LOGIN_IMG}              ${DESTDIR}/usr/share/X11/xdm/pixmaps/
 
 
 skel: bin/start.sh xxxdirxxx
