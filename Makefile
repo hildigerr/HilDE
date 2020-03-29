@@ -2,9 +2,6 @@ BINDIR=${DESTDIR}/usr/local/bin
 PIXDIR=${DESTDIR}/usr/share/pixmaps
 XRESOURCES=${DESTDIR}/etc/X11/xdm/Xresources
 
-WALLSIZE=1600x900
-
-WALLPAPER=img/bg/Hippo-in-a-TuTu-${WALLSIZE}.png
 START_MENU_IMG=img/icons/places/24/start-menu.png
 LOGIN_IMG=img/hilde.xpm
 
@@ -14,10 +11,9 @@ HilDE:
 
 
 
-.install: HilDE xdm ${WALLPAPER} ${START_MENU_IMG} bin/stop.sh
+.install: HilDE xdm ${START_MENU_IMG} bin/stop.sh
 	cp bin/stop.sh               ${BINDIR}/hilde-logout
 	chmod a+x                    ${BINDIR}/hilde-logout
-	cp ${WALLPAPER}              ${PIXDIR}/
 	cp -R img/icons/             ${DESTDIR}/usr/share/icons/HilDE/
 	ln ${DESTDIR}/usr/share/icons/HilDE/places/24/start-menu.png ${PIXDIR}/
 

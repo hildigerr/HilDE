@@ -6,7 +6,7 @@
 
 ####CONFIGURATION####
 TASKBAR=lxpanel
-WALLPAP="display -window root /usr/share/pixmaps/default-background.png"
+WALLPAP="display -window root /usr/share/backgrounds/hilde/Hippo-in-a-TuTu-1600x900.png"
 EXTRA=fbautostart
 WINMGR=lwm
 ###################
