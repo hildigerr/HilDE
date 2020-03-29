@@ -2,18 +2,24 @@
 
 echo "Don't Run This -- Just for Reference" && exit
 
+install() { echo "install: " $@; }
+
 # Prepare System
-add-apt-repository ppa:moonsdad/ppa
-apt-get purge \
-  byobu \
-  yelp #https://bugs.launchpad.net/ubuntu/+source/yelp/+bug/1404728
-apt-get autoremove
-apt-get update && apt-get upgrade && apt-get dist-upgrade
+if which apt-get 2>/dev/null
+  then
+    add-apt-repository ppa:moonsdad/ppa
+    apt-get purge \
+      byobu \
+      yelp #https://bugs.launchpad.net/ubuntu/+source/yelp/+bug/1404728
+    apt-get autoremove
+    apt-get update && apt-get upgrade && apt-get dist-upgrade
+    install() { apt-get install $@; }
+fi
 
 
 # GUI Basis
-apt-get install xinit xdm
-apt-get install lxpanel lxappearance
+install xinit xdm
+install lxpanel lxappearance
 
 # Desktop Environment Default Theme
 ln -s /usr/share/lxpanel/profile/hilde /etc/skel/.config/lxpanel/default
@@ -22,23 +28,23 @@ ln /usr/share/icons/HilDE/places/24/start-menu.png /usr/share/pixmaps/start-menu
 
 # Desktop Environment Default Apps
 # Terminal Emulator
-apt-get install termit
+install termit
 sed -i -e "s/^defaults.topMenu = false/defaults.topMenu = true/" /etc/xdg/termit/rc.lua
 # Text and Number Processing
-apt-get install medit speedcrunch
+install medit speedcrunch
 # Networking
-apt-get install firefox
+install firefox
 # Games
-apt-get install roll
+install roll
 # Image Processing
-apt-get install imagemagick gimp
+install imagemagick gimp
 # Audio Processing
-apt-get install sox libsox-fmt-all
+install sox libsox-fmt-all
 
 # Development
-apt-get install meld bugd git ascii
-apt-get install --install-suggests build-essential
-apt-get install --install-suggests devhelp
+install meld bugd git ascii
+install --install-suggests build-essential
+install --install-suggests devhelp
 
 
 # Enable Desktop Environment for Users
