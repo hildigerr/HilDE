@@ -29,7 +29,6 @@ xdm: backup xtra/Xresources ${LOGIN_IMG}
 
 skel: bin/start.sh
 	cp bin/start.sh              ${SKELDIR}/.Xsession
-	cp xtra/.xbindkeysrc         ${SKELDIR}/
 
 ### Unnecessary:
 
