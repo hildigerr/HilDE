@@ -48,7 +48,10 @@ Plugin {
   type=launchbar
   Config {
     Button {
-      id=/usr/share/applications/firefox.desktop
+      id=pcmanfm.desktop
+    }
+    Button {
+      id=firefox.desktop
     }
   }
 }

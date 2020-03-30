@@ -6,6 +6,4 @@ Enable functionality:
   - Hold CTRL to lock mouse axis
   - Desktop Paging (Maybe fork lxpanel)
   - Eye Track via Webcam for Window Focus (http://www.inference.phy.cam.ac.uk/opengazer/)
-Create deb package.
-Declare icon origins and license.
-
+  - Enable PCManFM desktop managment

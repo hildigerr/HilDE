@@ -25,6 +25,14 @@ depends+=(
 )
 
 # Default Apps
+
+# File Manager
+depends+=(
+    'pcmanfm'
+    'udiskie'
+    'gvfs'
+)
+
 optdepends=(
     'speedcrunch: recommended calculator'
     'firefox: recommended browser'

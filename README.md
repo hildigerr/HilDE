@@ -8,7 +8,7 @@ HilDE is a Lightweight Desktop Environment:
 	Calculator: Speedcrunch
 	Text Editor: medit
 	Web Browser: Firefox
-	File Manager: None (Terminal+Web Browser) [TODO]
+	File Manager: pcmanfm
 	Image Viewer: (imagemagick)
 	Media Player:
 		Audio: play (sox)
