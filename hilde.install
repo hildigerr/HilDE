@@ -13,11 +13,6 @@ post_isntall() {
     systemctl enable xdm.service
 }
 
-# Desktop Environment Default Theme
-ln -s /usr/share/lxpanel/profile/hilde /etc/skel/.config/lxpanel/default
-cp -R img/icons/ /usr/share/icons/HilDE/
-ln /usr/share/icons/HilDE/places/24/start-menu.png /usr/share/pixmaps/start-menu.png
-
 # Desktop Environment Default Apps
 # Terminal Emulator
 install hermit
