@@ -13,6 +13,8 @@ install: .install
 	cp -a files/*                "${DESTDIR}"
 
 debsetup:
+	sed -i 's/reboot/sudo reboot/' files/usr/bin/hilde-logout
+	sed -i 's/shutdown/sudo shutdown/' files/usr/bin/hilde-logout
 	mv files/etc/skel/.xinitrc   files/etc/skel/.Xsession
 	mkdir files/usr/share/X11
 	mv files/usr/share/xdm       files/usr/share/X11
