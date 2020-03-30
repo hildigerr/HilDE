@@ -43,7 +43,6 @@ optdepends=(
     'meld: vidual diff and merge utility'
     'pdfarranger: pdf manipulation utility'
     'gimp: image file manipulation utility'
-    'pass: recommended password manager'
     'ghex: recommended hex editor'
 )
 
