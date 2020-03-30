@@ -20,8 +20,6 @@ if [ $system = deb ]
   else
     echo install: https://aur.archlinux.org/medit.git #TODO
 fi
-# Audio Processing
-install sox libsox-fmt-all #TODO: fmts on arch
 
 
 # Enable Desktop Environment for Users

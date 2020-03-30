@@ -44,6 +44,7 @@ optdepends=(
     'pdfarranger: pdf manipulation utility'
     'gimp: image file manipulation utility'
     'ghex: recommended hex editor'
+    'sox: sound processing'
 )
 
 package() {
