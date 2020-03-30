@@ -6,9 +6,6 @@ install() { echo "install: " $@; }
 
 # Prepare System
 
-# System Essentials
-install ed git
-
 post_isntall() {
     systemctl enable xdm.service
 }
@@ -23,23 +20,8 @@ if [ $system = deb ]
   else
     echo install: https://aur.archlinux.org/medit.git #TODO
 fi
-install speedcrunch
-# Networking
-install firefox
-# Image Processing
-install imagemagick gimp
 # Audio Processing
 install sox libsox-fmt-all #TODO: fmts on arch
-# Misc
-install pass xpad
-# Development
-install meld ascii
-if [ $system = deb ]
-  then
-    install bugd
-    install --install-suggests build-essential
-    install --install-suggests devhelp
-fi
 
 
 # Enable Desktop Environment for Users

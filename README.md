@@ -14,4 +14,13 @@ HilDE is a Lightweight Desktop Environment:
 		Audio: play (sox)
 		Video: vlc
 
-	Additional: gimp, fbautostart, xtrlock, xpad, meld, file-roller
+	Additional:
+		fbautostart: XDG base directory spec compliant startup
+		xtrlock: screen locker
+		file-roller: archive manager
+		xpad: sticky notes
+		meld: grapical diff utility
+		gimp: image manipulation application
+		pdfarranger: pdf manipulation application
+		ghex: hex editor
+
