@@ -9,7 +9,7 @@ HilDE is a Lightweight Desktop Environment:
 	Text Editor: medit
 	Web Browser: Firefox
 	File Manager: pcmanfm
-	Image Viewer: (imagemagick)
+	Image Viewer: sxiv
 	Media Player:
 		Audio: play (sox)
 		Video: None (Web Browser)

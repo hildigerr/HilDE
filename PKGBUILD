@@ -34,6 +34,7 @@ depends+=(
 )
 
 optdepends=(
+    'sxiv: recommended immage viewer'
     'speedcrunch: recommended calculator'
     'firefox: recommended browser'
     'xpad: recommended notepad'
