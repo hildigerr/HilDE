@@ -26,11 +26,6 @@ fi
 install speedcrunch
 # Networking
 install firefox
-# Games
-if [ $system = deb ]
-  then
-    install roll
-fi
 # Image Processing
 install imagemagick gimp
 # Audio Processing
