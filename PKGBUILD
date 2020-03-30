@@ -37,6 +37,7 @@ optdepends=(
     'sxiv: recommended immage viewer'
     'speedcrunch: recommended calculator'
     'firefox: recommended browser'
+    'vlc: recommended video player'
     'xpad: recommended notepad'
 )
 

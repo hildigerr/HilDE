@@ -12,6 +12,6 @@ HilDE is a Lightweight Desktop Environment:
 	Image Viewer: sxiv
 	Media Player:
 		Audio: play (sox)
-		Video: None (Web Browser)
+		Video: vlc
 
 	Additional: roll, gimp, fbautostart, xtrlock, pass, xpad
