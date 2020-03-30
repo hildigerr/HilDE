@@ -22,6 +22,7 @@ Global {
   background=0
   iconsize=24
   loglevel=2
+  monitor=-1
 }
 Plugin {
   type=launchbar
