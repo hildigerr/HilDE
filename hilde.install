@@ -9,15 +9,9 @@ install() { echo "install: " $@; }
 # System Essentials
 install ed git
 
-# GUI Basis
-if [ $system = arch ]
-  then
-    install xorg-server xorg-xdm xorg-xmessage
+post_isntall() {
     systemctl enable xdm.service
-  else
-    install xinit xdm xmessage
-fi
-install lxpanel
+}
 
 # Desktop Environment Default Theme
 ln -s /usr/share/lxpanel/profile/hilde /etc/skel/.config/lxpanel/default
