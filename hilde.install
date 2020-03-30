@@ -5,22 +5,6 @@ echo "Don't Run This -- Just for Reference" && exit
 install() { echo "install: " $@; }
 
 # Prepare System
-if which apt-get 2>/dev/null
-  then
-    system=deb
-    add-apt-repository ppa:moonsdad/ppa
-    apt-get purge \
-      byobu \
-      yelp #https://bugs.launchpad.net/ubuntu/+source/yelp/+bug/1404728
-    apt-get autoremove
-    apt-get update && apt-get upgrade && apt-get dist-upgrade
-    install() { apt-get install $@; }
-fi
-if which pacman 2>/dev/null
-  then
-    system=arch
-    install() { pacman -S $@; }
-fi
 
 # System Essentials
 install ed git

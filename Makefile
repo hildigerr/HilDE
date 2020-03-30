@@ -22,6 +22,11 @@ debsetup:
 
 ### Unnecessary:
 
+aptprep:
+	add-apt-repository ppa:moonsdad/ppa
+	apt-get purge byobu yelp #https://bugs.launchpad.net/ubuntu/+source/yelp/+bug/1404728
+	apt-get autoremove
+
 backup:
 	cp ${XRESOURCES}             ${XRESOURCES}.old-`date +%F`
 
