@@ -2,24 +2,16 @@
 
 echo "Don't Run This -- Just for Reference" && exit
 
-install() { echo "install: " $@; }
 
 # Prepare System
 
 post_isntall() {
     systemctl enable xdm.service
-}
-
-# Desktop Environment Default Apps
-# Terminal Emulator
-install hermit
-# Text and Number Processing
-if [ $system = deb ]
-  then
-    install medit
-  else
+    # Terminal Emulator
+    echo install: hermit
+    # Text Editor
     echo install: https://aur.archlinux.org/medit.git #TODO
-fi
+}
 
 
 # Enable Desktop Environment for Users
