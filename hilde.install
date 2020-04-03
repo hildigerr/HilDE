@@ -1,9 +1,8 @@
 
 post_isntall() {
-    systemctl enable xdm.service
-    # Terminal Emulator
-    echo install: hermit
-    # Text Editor
-    echo install: https://aur.archlinux.org/medit.git #TODO
+    echo "To enable HilDE:"
+    echo "  cp /etc/X11/xdm/Xresources /etc/X11/xdm/Xresources-bkup # Optional"
+    echo "  mv /etc/X11/xdm/Xresources-hilde /etc/X11/xdm/Xresources"
+    echo "  systemctl enable xdm.service"
 }
 

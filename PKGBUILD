@@ -7,11 +7,14 @@ arch=('any')
 url="https://github.com/hildigerr/HilDE"
 license=('Artistic2.0')
 
+install=hilde.install
+
 # GUI Basics
 depends=(
     'xorg-server'
     'xorg-xdm'
     'xorg-xmessage'
+    'lwm'
 )
 
 # Session Startup
@@ -34,6 +37,8 @@ depends+=(
 )
 
 optdepends=(
+    'termit-git: recommended terminal emulator'
+    'medit: recommended text editor'
     'sxiv: recommended immage viewer'
     'speedcrunch: recommended calculator'
     'firefox: recommended browser'
