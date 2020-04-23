@@ -28,7 +28,7 @@ Plugin {
   type=launchbar
   Config {
     Button {
-      id=/usr/share/applications/termit.desktop
+      id=termit.desktop
     }
   }
 }
