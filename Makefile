@@ -10,6 +10,7 @@ install: .install
 
 .install:
 	chmod a+x                    files/usr/bin/hilde-logout
+	chmod u+x                    files/etc/skel/.xinitrc
 	cp -a files/*                "${DESTDIR}"
 
 debsetup:
