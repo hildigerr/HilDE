@@ -1,9 +1,0 @@
-
-post_install() {
-    echo "To enable HilDE:"
-    echo "  cp /etc/skel/.xinitrc \$HOME/.xinitrc"
-    echo "  cp /etc/X11/xdm/Xresources /etc/X11/xdm/Xresources-bkup # Optional"
-    echo "  mv /etc/X11/xdm/Xresources-hilde /etc/X11/xdm/Xresources"
-    echo "  systemctl enable xdm.service"
-}
-
