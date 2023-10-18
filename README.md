@@ -17,10 +17,10 @@ HilDE is a Lightweight Desktop Environment:
 	Additional:
 		fbautostart: XDG base directory spec compliant startup
 		xtrlock: screen locker
+		notification-daemon: pop-up notifications
 		file-roller: archive manager
 		xpad: sticky notes
 		meld: grapical diff utility
 		gimp: image manipulation application
 		pdfarranger: pdf manipulation application
-		ghex: hex editor
 

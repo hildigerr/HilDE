@@ -19,6 +19,7 @@ depends=(
     'xorg-xdm'
     'xorg-xmessage'
     'lwm'
+    'notification-daemon'
 )
 
 # Session Startup
@@ -52,9 +53,7 @@ optdepends=(
     'meld: visual diff and merge utility'
     'pdfarranger: pdf manipulation utility'
     'gimp: image file manipulation utility'
-    'ghex: recommended hex editor'
     'sox: sound processing'
-    'notification-daemon: pop-up notifications'
 )
 
 package() {
