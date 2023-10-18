@@ -4,6 +4,7 @@ post_install() {
     echo "  cp /etc/skel/.xinitrc \$HOME/.xinitrc"
     echo "  cp /etc/X11/xdm/Xresources /etc/X11/xdm/Xresources-bkup # Optional"
     echo "  mv /etc/X11/xdm/Xresources-hilde /etc/X11/xdm/Xresources"
+    echo "  sed -i 's/Xsession/Xsession-xdg/' /etc/X11/xdm/xdm-config"
     echo "  systemctl enable xdm.service"
 }
 
