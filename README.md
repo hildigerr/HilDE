@@ -6,7 +6,7 @@ HilDE is a Lightweight Desktop Environment:
 	Taskbar: lxpanel
 	Terminal Emulator: hermit (My fork of Termit)
 	Calculator: Speedcrunch
-	Text Editor: medit
+	Text Editor: ed
 	Web Browser: Firefox
 	File Manager: pcmanfm
 	Image Viewer: sxiv

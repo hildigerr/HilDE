@@ -1,5 +1,4 @@
 Enable functionality:
-  - Window Resize vs GTK Bug (eg medit and termit)
   - Prefer both x,y window resize
   - Move close window box right
   - Alt-F4 Log Out if no active window

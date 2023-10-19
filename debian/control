@@ -10,6 +10,6 @@ Package: hilde
 Architecture: any
 Pre-Depends: xdm
 Depends: xinit, lwm | tinywm, lxpanel, fbautostart, xbindkeys, wmctrl, xtrlock, xmessage, notification-daemon
-Recommends: hermit, medit, speedcrunch, imagemagick, pcmanfm, sxiv, archivemanager, sox, libsox-fmt-all
+Recommends: hermit, ed, speedcrunch, imagemagick, pcmanfm, sxiv, archivemanager, sox, libsox-fmt-all
 Suggests: firefox, meld, xpad, vlc, gimp, pdfarranger
 Description: HilDE is a Lightweight Desktop Environment
