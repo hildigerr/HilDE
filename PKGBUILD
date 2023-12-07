@@ -1,14 +1,13 @@
 # Maintainer: Hildigerr Vergaray <Maintainer@YmirSystems.com>
-pkgname=hilde-gtk3
+pkgname=('hilde' 'hilde-gtk3')
 pkgver=0.0.2
-pkgrel=0
+pkgrel=1
 pkgdesc="Lightweight Desktop Environment"
 arch=('any')
 url="https://github.com/hildigerr/HilDE"
 license=('Artistic2.0')
 source=("hilde::git+${url}")
 md5sums=('SKIP')
-conflicts=(hilde)
 
 install=hilde.install
 
@@ -30,14 +29,12 @@ depends+=(
     'xtrlock'
     'imagemagick'
     'fbautostart'
-    'lxpanel-gtk3'
 )
 
 # Default Apps
 
 # File Manager
 depends+=(
-    'pcmanfm-gtk3'
     'udiskie'
     'gvfs'
 )
@@ -57,7 +54,22 @@ optdepends=(
     'sox: sound processing'
 )
 
-package() {
-  cd "$srcdir/${pkgname%-gtk3}"
+package_hilde() {
+  conflicts=(hilde-gtk3)
+  depends+=(
+    'lxpanel'
+    'pcmanfm'
+  )
+  cd "$srcdir/${pkgbase}"
+  make DESTDIR="$pkgdir/" install
+}
+
+package_hilde-gtk3() {
+  conflicts=(hilde)
+  depends+=(
+    'lxpanel-gtk3'
+    'pcmanfm-gtk3'
+  )
+  cd "$srcdir/${pkgbase}"
   make DESTDIR="$pkgdir/" install
 }
