@@ -8,3 +8,11 @@ post_install() {
     echo "  systemctl enable xdm.service"
 }
 
+
+post_upgrade() {
+    local old_version="$2"
+    if [[ "$(vercmp "$old_version" "0.0.3-1")" -lt 0 ]]; then
+        echo "Warning: 'udiskie' is no longer required by HilDE"
+        echo "          and so may be orphaned on your system."
+    fi
+}

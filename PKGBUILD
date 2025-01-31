@@ -1,6 +1,6 @@
 # Maintainer: Hildigerr Vergaray <Maintainer@YmirSystems.com>
 pkgname=('hilde' 'hilde-gtk3')
-pkgver=0.0.2
+pkgver=0.0.3
 pkgrel=1
 pkgdesc="Lightweight Desktop Environment"
 arch=('any')
@@ -35,7 +35,6 @@ depends+=(
 
 # File Manager
 depends+=(
-    'udiskie'
     'gvfs'
 )
 
