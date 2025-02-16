@@ -9,4 +9,8 @@ if [ ! -f "$config_file" ]; then
   fi
 fi
 
-xbindkeys -f "$config_file" &
+if command -v xbindkeys >/dev/null 2>&1; then
+  xbindkeys -f "$config_file" &
+else
+  echo "Warning: xbindkeys is not installed. Not spawning."
+fi
