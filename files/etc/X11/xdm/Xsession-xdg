@@ -64,6 +64,6 @@ else
     elif [ -r "$HOME/.xinitrc" ]; then
         exec /bin/sh -ls -c "$HOME/.xinitrc"
     else
-        exec /bin/sh -l /etc/X11/xinit/xinitrc
+        exec /bin/sh -l /etc/X11/xinit/hilde.xinitrc
     fi
 fi
