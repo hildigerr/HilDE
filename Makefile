@@ -10,13 +10,11 @@ install: .install
 
 .install:
 	chmod a+x                    files/usr/bin/hilde-logout
-	chmod u+x                    files/etc/skel/.xinitrc
 	cp -a files/*                "${DESTDIR}"
 
 debsetup:
 	sed -i 's/reboot/sudo reboot/' files/usr/bin/hilde-logout
 	sed -i 's/shutdown/sudo shutdown/' files/usr/bin/hilde-logout
-	mv files/etc/skel/.xinitrc   files/etc/skel/.Xsession
 	mkdir files/usr/share/X11
 	mv files/usr/share/xdm       files/usr/share/X11
 	sed -i s.share/xdm.share/X11/xdm. files/etc/X11/xdm/Xresources

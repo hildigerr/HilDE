@@ -59,8 +59,8 @@ else
     elif [ -r "$HOME/.Xresources" ]; then
         /usr/bin/xrdb -load "$HOME/.Xresources"
     fi
-    if [ -r "$XDG_CONFIG_HOME/X11/.xinitrc" ]; then
-        exec /bin/sh -ls -c "$XDG_CONFIG_HOME/X11/.xinitrc"
+    if [ -r "$XDG_CONFIG_HOME/X11/xinitrc" ]; then
+        exec /bin/sh -ls -c "$XDG_CONFIG_HOME/X11/xinitrc"
     elif [ -r "$HOME/.xinitrc" ]; then
         exec /bin/sh -ls -c "$HOME/.xinitrc"
     else
