@@ -43,17 +43,7 @@ Plugin {
 }
 Plugin {
   type=taskbar
-  expand=1
   Config {
-    tooltips=1
-    IconsOnly=0
-    ShowAllDesks=0
-    UseMouseWheel=1
-    UseUrgencyHint=1
-    FlatButton=0
-    MaxTaskWidth=200
-    spacing=1
-    GroupedTasks=0
   }
 }
 Plugin {
