@@ -54,5 +54,19 @@ Plugin {
   }
 }
 Plugin {
-  type=pager
+  type=thermal
+  Config {
+    NormalColor=#00ff00
+    Warning1Color=#fff000
+    Warning2Color=#ff0000
+    AutomaticLevels=1
+    Warning1Temp=95
+    Warning2Temp=100
+    AutomaticSensor=1
+  }
+}
+Plugin {
+  type=cpu
+  Config {
+  }
 }

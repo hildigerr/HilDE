@@ -61,9 +61,6 @@ Plugin {
   }
 }
 Plugin {
-  type=cpu
-}
-Plugin {
   type=tray
 }
 Plugin {
