@@ -1,6 +1,6 @@
 # Maintainer: Hildigerr Vergaray <Maintainer@YmirSystems.com>
 pkgname=('hilde' 'hilde-gtk3')
-pkgver=0.0.3
+pkgver=0.0.4
 pkgrel=1
 pkgdesc="Lightweight Desktop Environment"
 arch=('any')
@@ -20,6 +20,7 @@ depends=(
     'xorg-xmessage'
     'lwm'
     'notification-daemon'
+    'mate-polkit'
 )
 
 # Session Startup
