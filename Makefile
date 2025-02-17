@@ -6,8 +6,9 @@ HilDE:
 install: .install
 
 .install:
-	chmod a+x                    files/usr/bin/hilde-logout
-	cp -a files/*                "${DESTDIR}"
+	find files -type f -printf '%P\0' | xargs -0 -I {} install -Dm644 "files/{}" "${DESTDIR}/{}"
+	chmod a+x "${DESTDIR}/etc/X11/xinit/xinitrc.d/99-spawn-xbindkeys.sh"
+	chmod a+x "${DESTDIR}/usr/bin/hilde-logout"
 
 debsetup:
 	sed -i 's/reboot/sudo reboot/' files/usr/bin/hilde-logout
