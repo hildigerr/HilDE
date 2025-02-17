@@ -1,6 +1,6 @@
 # Maintainer: Hildigerr Vergaray <Maintainer@YmirSystems.com>
 pkgname=('hilde' 'hilde-gtk3')
-pkgver=0.0.4
+pkgver=0.1.0
 pkgrel=1
 pkgdesc="Lightweight Desktop Environment"
 arch=('any')
@@ -10,6 +10,11 @@ source=("hilde::git+${url}")
 md5sums=('SKIP')
 
 install=hilde.install
+backup=(
+    etc/X11/xdm/hilde/Xresources
+    etc/X11/xdm/hilde/Xsession
+    etc/X11/xdm/hilde/xdm-config
+)
 
 makedepends=('git')
 
