@@ -1,7 +1,7 @@
 # Maintainer: Hildigerr Vergaray <Maintainer@YmirSystems.com>
 pkgname=('hilde' 'hilde-gtk3')
-pkgver=0.1.0
-pkgrel=2
+pkgver=0.1.1
+pkgrel=1
 pkgdesc="Lightweight Desktop Environment"
 arch=('any')
 url="https://github.com/hildigerr/HilDE"

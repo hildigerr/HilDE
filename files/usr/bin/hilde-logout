@@ -16,5 +16,10 @@ case $? in
     $Shutdown)
         shutdown -h now;;
     $Logout)
+        if [ "$(whoami)" = "root" ]; then
+          lxpanelctl exit
+          pkill "${1:-lwm}"
+          exit 0
+        fi
         killall -u $USER;;
 esac

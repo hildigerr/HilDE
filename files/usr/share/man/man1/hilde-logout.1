@@ -1,0 +1,23 @@
+.TH hilde-logout 1 "2025-03-03" "HilDE Desktop Environment"
+.SH NAME
+hilde-logout \- Shutdown, Reboot, or Exit the current session.
+.SH SYNOPSIS
+.B hilde-logout
+[\fIwindow_manager\fR]
+.SH DESCRIPTION
+The \fBhilde-logout\fR command provides exit methods for the current user session. It is part of the HilDE Desktop Environment.
+
+If a nondefault window manager is being used, an optional parameter should be provided to specify the window manager's process name. This option is only necessary for root users. If not provided, the default window manager is terminated in order to log out.
+
+.SH OPTIONS
+.TP
+\fIwindow_manager\fR
+Specifies the process name of the window manager to terminate when logging out.
+
+.SH NOTES
+* For logging out as the root user, if the specified window manager process is not running, the logout command will not terminate whatever window manager \fBis\fR running (so you wont be logged out).
+
+* It is the user's responsibility to provide the correct window manager process name when using the optional parameter.
+
+* When exiting, all processes are terminated. If any unsaved work exists, you will lose that data.
+
