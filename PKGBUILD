@@ -1,7 +1,7 @@
 # Maintainer: Hildigerr Vergaray <Maintainer@YmirSystems.com>
 pkgname=('hilde' 'hilde-gtk3')
 pkgver=0.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Lightweight Desktop Environment"
 arch=('any')
 url="https://github.com/hildigerr/HilDE"
@@ -65,8 +65,7 @@ package_hilde() {
     'lxpanel'
     'pcmanfm'
   )
-  cd "$srcdir/${pkgbase}"
-  make DESTDIR="$pkgdir/" install
+  _package
 }
 
 package_hilde-gtk3() {
@@ -75,6 +74,11 @@ package_hilde-gtk3() {
     'lxpanel-gtk3'
     'pcmanfm-gtk3'
   )
+  _package
+}
+
+_package () {
   cd "$srcdir/${pkgbase}"
   make DESTDIR="$pkgdir/" install
+  ln -s "/usr/share/applications/notification-daemon.desktop" "$pkgdir/etc/xdg/autostart/notification-daemon.desktop"
 }
