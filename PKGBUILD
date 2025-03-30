@@ -1,6 +1,6 @@
 # Maintainer: Hildigerr Vergaray <Maintainer@YmirSystems.com>
 pkgname=('hilde' 'hilde-gtk3')
-pkgver=0.1.1
+pkgver=0.1.2
 pkgrel=1
 pkgdesc="Lightweight Desktop Environment"
 arch=('any')
@@ -26,6 +26,7 @@ depends=(
     'lwm'
     'notification-daemon'
     'mate-polkit'
+    'hilde-lxmenu-data'
 )
 
 # Session Startup
@@ -52,7 +53,7 @@ optdepends=(
     'firefox: recommended browser'
     'vlc: recommended video player'
     'xpad: recommended notepad'
-    'file-roller: recommended archive manager'
+    'xarchiver: recommended archive manager'
     'meld: visual diff and merge utility'
     'pdfarranger: pdf manipulation utility'
     'gimp: image file manipulation utility'
