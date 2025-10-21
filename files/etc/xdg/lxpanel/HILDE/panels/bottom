@@ -28,7 +28,7 @@ Plugin {
   type=launchbar
   Config {
     Button {
-      id=termit.desktop
+      id=xfce4-terminal.desktop
     }
   }
 }

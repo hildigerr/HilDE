@@ -1,6 +1,6 @@
 # Maintainer: Hildigerr Vergaray <Maintainer@YmirSystems.com>
 pkgname=('hilde' 'hilde-gtk3')
-pkgver=0.1.2
+pkgver=0.1.3
 pkgrel=1
 pkgdesc="Lightweight Desktop Environment"
 arch=('any')
@@ -47,7 +47,7 @@ depends+=(
 
 optdepends=(
     'ed: recommended text editor'
-    'termit-git: recommended terminal emulator'
+    'xfce4-terminal: recommended terminal emulator'
     'sxiv: recommended image viewer'
     'speedcrunch: recommended calculator'
     'firefox: recommended browser'

@@ -4,7 +4,7 @@ HilDE is a Lightweight Desktop Environment:
 	Display Manager: XDM
 	Window Manager: My own fork of either LWM or TinyWM (Haven't decided yet)
 	Taskbar: lxpanel
-	Terminal Emulator: hermit (My fork of Termit)
+	Terminal Emulator: xfce4-terminal
 	Calculator: Speedcrunch
 	Text Editor: ed
 	Web Browser: Firefox
