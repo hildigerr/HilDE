@@ -1,6 +1,6 @@
 # Maintainer: Hildigerr Vergaray <Maintainer@YmirSystems.com>
-pkgname=('hilde' 'hilde-gtk3')
-pkgver=0.1.3
+pkgname='hilde'
+pkgver=0.1.4
 pkgrel=1
 pkgdesc="Lightweight Desktop Environment"
 arch=('any')
@@ -8,6 +8,8 @@ url="https://github.com/hildigerr/HilDE"
 license=('Artistic2.0')
 source=("hilde::git+${url}")
 md5sums=('SKIP')
+conflicts=(hilde-gtk3)
+replaces=(hilde-gtk3)
 
 install=hilde.install
 backup=(
@@ -27,6 +29,7 @@ depends=(
     'notification-daemon'
     'mate-polkit'
     'hilde-lxmenu-data'
+    'lxpanel'
 )
 
 # Session Startup
@@ -43,6 +46,7 @@ depends+=(
 # File Manager
 depends+=(
     'gvfs'
+    'pcmanfm'
 )
 
 optdepends=(
@@ -61,24 +65,6 @@ optdepends=(
 )
 
 package_hilde() {
-  conflicts=(hilde-gtk3)
-  depends+=(
-    'lxpanel'
-    'pcmanfm'
-  )
-  _package
-}
-
-package_hilde-gtk3() {
-  conflicts=(hilde)
-  depends+=(
-    'lxpanel-gtk3'
-    'pcmanfm-gtk3'
-  )
-  _package
-}
-
-_package () {
   cd "$srcdir/${pkgbase}"
   make DESTDIR="$pkgdir/" install
   ln -s "/usr/share/applications/notification-daemon.desktop" "$pkgdir/etc/xdg/autostart/notification-daemon.desktop"
