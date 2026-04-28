@@ -50,6 +50,7 @@ depends+=(
 )
 
 optdepends=(
+    'at: recommended command scheduler'
     'ed: recommended text editor'
     'xfce4-terminal: recommended terminal emulator'
     'sxiv: recommended image viewer'
