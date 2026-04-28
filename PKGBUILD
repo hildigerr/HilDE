@@ -1,6 +1,6 @@
 # Maintainer: Hildigerr Vergaray <Maintainer@YmirSystems.com>
 pkgname='hilde'
-pkgver=0.1.4
+pkgver=0.1.5
 pkgrel=1
 pkgdesc="Lightweight Desktop Environment"
 arch=('any')
@@ -30,6 +30,7 @@ depends=(
     'mate-polkit'
     'hilde-lxmenu-data'
     'lxpanel'
+    'libnotify'
 )
 
 # Session Startup
