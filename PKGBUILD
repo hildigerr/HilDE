@@ -30,7 +30,6 @@ depends=(
     'mate-polkit'
     'hilde-lxmenu-data'
     'lxpanel'
-    'libnotify'
 )
 
 # Session Startup
@@ -64,6 +63,7 @@ optdepends=(
     'pdfarranger: pdf manipulation utility'
     'gimp: image file manipulation utility'
     'sox: sound processing'
+    'libnotify: for notify-send functionality'
 )
 
 package_hilde() {
